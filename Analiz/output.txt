@@ -1,0 +1,105 @@
+HASH TABLE
+
+Key=1	Keyword INTEGER	INTEGER
+Key=25	Keyword PROGRAM	PROGRAM
+Key=16	Keyword END	END
+Key=19	Keyword TO	TO
+Key=7	Keyword DO	DO
+Key=0	Keyword FOR	FOR
+Key=2	ID	b
+Key=4	ID	c
+Key=6	ID	a
+Key=26	ID	test
+Key=15	Integer number	1
+Key=20	Integer number	100
+Key=27	Integer number	10
+Key=3	Sum	+
+Key=11	Equals	=
+Key=5	Comma	,
+
+TREE
+
+FUNCTION
+|----BEGIN
+|	|----Keyword PROGRAM	PROGRAM
+|	|----ID
+|	|	|----ID	test
+|----DESCRIPTION
+|	|----DESCR
+|	|	|----TYPE
+|	|	|	|----Keyword INTEGER	INTEGER
+|	|	|----VAR_LIST
+|	|	|	|----ID
+|	|	|	|	|----ID	a
+|	|	|	|----Comma	,
+|	|	|	|----VAR_LIST
+|	|	|	|	|----ID
+|	|	|	|	|	|----ID	b
+|----OPERATORS
+|	|----OP
+|	|	|----ID
+|	|	|	|----ID	b
+|	|	|----Equals	=
+|	|	|----EXPR
+|	|	|	|----SIMPLE_EXPR
+|	|	|	|	|----Const
+|	|	|	|	|	|----INTNUMBER
+|	|	|	|	|	|	|----Integer number	10
+|	|	|	|----Sum	+
+|	|	|	|----EXPR
+|	|	|	|	|----SIMPLE_EXPR
+|	|	|	|	|	|----ID
+|	|	|	|	|	|	|----ID	c
+|	|----OPERATORS
+|	|	|----OP
+|	|	|	|----Keyword FOR	FOR
+|	|	|	|----ID
+|	|	|	|	|----ID	a
+|	|	|	|----Equals	=
+|	|	|	|----EXPR
+|	|	|	|	|----SIMPLE_EXPR
+|	|	|	|	|	|----Const
+|	|	|	|	|	|	|----INTNUMBER
+|	|	|	|	|	|	|	|----Integer number	1
+|	|	|	|----Keyword TO	TO
+|	|	|	|----EXPR
+|	|	|	|	|----SIMPLE_EXPR
+|	|	|	|	|	|----Const
+|	|	|	|	|	|	|----INTNUMBER
+|	|	|	|	|	|	|	|----Integer number	10
+|	|	|	|----Keyword DO	DO
+|	|	|----OPERATORS
+|	|	|	|----OP
+|	|	|	|	|----ID
+|	|	|	|	|	|----ID	b
+|	|	|	|	|----Equals	=
+|	|	|	|	|----EXPR
+|	|	|	|	|	|----SIMPLE_EXPR
+|	|	|	|	|	|	|----Const
+|	|	|	|	|	|	|	|----INTNUMBER
+|	|	|	|	|	|	|	|	|----Integer number	1
+|	|	|	|	|	|----Sum	+
+|	|	|	|	|	|----EXPR
+|	|	|	|	|	|	|----SIMPLE_EXPR
+|	|	|	|	|	|	|	|----Const
+|	|	|	|	|	|	|	|	|----INTNUMBER
+|	|	|	|	|	|	|	|	|	|----Integer number	1
+|	|	|	|----OPERATORS
+|	|	|	|	|----OP
+|	|	|	|	|	|----ID
+|	|	|	|	|	|	|----ID	a
+|	|	|	|	|	|----Equals	=
+|	|	|	|	|	|----EXPR
+|	|	|	|	|	|	|----SIMPLE_EXPR
+|	|	|	|	|	|	|	|----Const
+|	|	|	|	|	|	|	|	|----INTNUMBER
+|	|	|	|	|	|	|	|	|	|----Integer number	100
+|	|	|	|	|	|	|----Sum	+
+|	|	|	|	|	|	|----EXPR
+|	|	|	|	|	|	|	|----SIMPLE_EXPR
+|	|	|	|	|	|	|	|	|----ID
+|	|	|	|	|	|	|	|	|	|----ID	a
+|----END
+|	|----Keyword END	END
+|	|----ID
+|	|	|----ID	test
